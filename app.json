@@ -1,31 +1,34 @@
 {
   "expo": {
-    "name": "googleMap",
+    "name": "Google Map",
     "slug": "googleMap",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/app-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/Splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/app-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.locatory.googlemaptuts"
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR API KEY"
+        }
+      },
+      "package": "com.googleMap.locatory"
     },
     "web": {
       "favicon": "./assets/favicon.png"
